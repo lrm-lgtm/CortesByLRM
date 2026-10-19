@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cortesbylrm"
+version = "0.1.0"
+description = "Pipeline local de cortes verticais com documentação de direitos e controle de receita."
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+cortesbylrm = "cortesbylrm.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
